@@ -9,10 +9,15 @@
     <link rel="stylesheet" href="css/styles.css">
     <title>SISTEMA</title>
 </head>
-<?php 
+<?php
 session_start();
 require_once 'addcliente.php';
-require_once 'addproduto.php';?>
+require_once 'addproduto.php';
+if (!isset($_SESSION["usuario"])) {
+    header("location: index.php");
+}
+?>
+
 <body>
     <div id="container">
         <aside>
@@ -39,11 +44,8 @@ require_once 'addproduto.php';?>
                     <span>
                         <strong>
                             <?php
-                            if(isset($_SESSION["usuario"])) {
-                                echo$_SESSION["nome"];
-                            } else {
-                                header("location: index.php");
-                            }?>
+                            echo $_SESSION["nome"];
+                            ?>
                         </strong>
                     </span>
                     <a href="modules/function/logout.php"><span class="material-symbols-outlined logout">logout</span></a>
