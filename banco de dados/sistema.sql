@@ -34,16 +34,6 @@ CREATE TABLE `cliente` (
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `cliente`
---
-
-LOCK TABLES `cliente` WRITE;
-/*!40000 ALTER TABLE `cliente` DISABLE KEYS */;
-INSERT INTO `cliente` VALUES (71,'abc','40028922'),(72,'Matias2','2'),(73,'aaaaaaaaaaaaa','40028922'),(75,'adasdasdas','40028922'),(76,'Ronaldinho Soccer','40028922'),(85,'Ronaldinho Soccers','23131231');
-/*!40000 ALTER TABLE `cliente` ENABLE KEYS */;
-UNLOCK TABLES;
-
---
 -- Table structure for table `historico`
 --
 
@@ -67,15 +57,6 @@ CREATE TABLE `historico` (
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `historico`
---
-
-LOCK TABLES `historico` WRITE;
-/*!40000 ALTER TABLE `historico` DISABLE KEYS */;
-/*!40000 ALTER TABLE `historico` ENABLE KEYS */;
-UNLOCK TABLES;
-
---
 -- Table structure for table `produto`
 --
 
@@ -90,16 +71,6 @@ CREATE TABLE `produto` (
   UNIQUE KEY `produto` (`produto`)
 ) ENGINE=InnoDB AUTO_INCREMENT=24 DEFAULT CHARSET=utf8mb3;
 /*!40101 SET character_set_client = @saved_cs_client */;
-
---
--- Dumping data for table `produto`
---
-
-LOCK TABLES `produto` WRITE;
-/*!40000 ALTER TABLE `produto` DISABLE KEYS */;
-INSERT INTO `produto` VALUES (21,'teste1245','2'),(23,'MESSI DE CALCINHA','2');
-/*!40000 ALTER TABLE `produto` ENABLE KEYS */;
-UNLOCK TABLES;
 
 --
 -- Table structure for table `usuario`
@@ -117,16 +88,6 @@ CREATE TABLE `usuario` (
   UNIQUE KEY `usuario` (`usuario`)
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb3;
 /*!40101 SET character_set_client = @saved_cs_client */;
-
---
--- Dumping data for table `usuario`
---
-
-LOCK TABLES `usuario` WRITE;
-/*!40000 ALTER TABLE `usuario` DISABLE KEYS */;
-INSERT INTO `usuario` VALUES (1,'a','b','c');
-/*!40000 ALTER TABLE `usuario` ENABLE KEYS */;
-UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
@@ -137,4 +98,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2022-08-30 21:44:19
+-- Dump completed on 2022-09-06  1:52:51
