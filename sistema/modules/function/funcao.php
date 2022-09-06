@@ -30,14 +30,14 @@ if ($_SESSION["usuario"]) {
                 $idCliente = $cliente->Select()[0]->id;
             }
             $valor = $produto->Valor($produtos);
-            $historico->Insert($idCliente, $produtos, $data, $qtd, $valor, $status);
+            $historico->Insert($idCliente, $produtos, $data, $qtd, $valor*$qtd, $status);
             break;
         case "Adicionar Produto";
             $produto->insert($produtos, $preco);
             break;
         case "Editar";
             $valor = $produto->Valor($produtos);
-            $historico->Update($produtos, $data, $qtd, $valor, $status, $historicoID);
+            $historico->Update($produtos, $data, $qtd, $valor*$qtd, $status, $historicoID);
             $cliente->Update($nome, $telefone, $clienteID);
             break;
         case "Delete";
